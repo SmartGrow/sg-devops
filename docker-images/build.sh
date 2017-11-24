@@ -19,7 +19,7 @@ for file in $(pwd)/*; do
 			dir_file=${filename##*/}
 			case $dir_file in
 				# If directory contains a Dockerfile file add to directories array and increment count
-				Dockerfile) DIRECTORIES[$SUCCESSFUL_ITERATIONS]=$DIR; SUCCESSFUL_ITERATIONS=$((SUCCESSFUL_ITERATIONS + 1));;
+				Dockerfile) DIRECTORIES[$SUCCESSFUL_ITERATIONS]=$DIR; SUCCESSFUL_ITERATIONS=$((SUCCESSFUL_ITERATIONS + 1)); break;;
 			esac
 		done
 	fi
